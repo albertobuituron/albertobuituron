@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link rel="stylesheet" href="./css/estilos.css"> <!--Carga hoja de estilos-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header>
+        <div class="logoalura">
+            <a href="https://www.aluracursos.com/" target="_blank" rel="noopener noreferrer">
+                <picture>
+                <img src="./imagenes/alura.png" alt="¨Link página Alura" width="100" height="100"> 
+                </picture>
+            </a>
+            <h1>Encriptador de Texto</h1>
+        </div>
+    </header>
+
+    <main>
+     
+        <div class="container"> <!-- Dentro del contenedor estan la seccion de Encriptado para ingresar texto y el formulacio de respuesta con el texto encriptado/desencriptado-->
+            <div class="encriptador">
+                <div class="input">
+                    <form class="input__form" action="">
+                        <textarea class="input__texto textarea" id="texto" type="text"
+                            placeholder="Ingrese el texto para encriptar o desencriptar aqui">
+                        </textarea>
+
+                        <div class="input__botones">
+                              <a class="boton" id="botonEnc" type="button" value="Encriptar"><span class="boton__span boton__span-encriptar">Encriptar</span></a>
+                              <a class="boton" id="botonDec" type="button" value="Desencriptar"><span class="boton__span boton__span-desencriptar">Desencriptar</span></a>
+                              <a class="boton" id="botonborrar" type="button" value="Borrar"><span class="boton__span boton__span-borrar">Borrar</span></a>
+                        </div>
+                    </form>
+
+                </div>
+
+
+                <div class="output">
+                    <form class="output__form" action="">
+                        <div class="output__texto">
+                            <textarea class="output__textarea textarea" name="tArea" id="tArea" cols="" rows=""></textarea>
+                        </div>
+
+                        <div id="tapa" class="output__tapa">
+                            <p class="output__mensajenotexto">Ningún mensaje fue encontrado. Ingresa el texto que desees encriptar o desencriptar. </p>
+                        </div>
+                    </form>
+                    <a class="boton " id="botonCop" type="button" value="Copiar"><span class="boton__span boton__span-copiar ">Copiar</span></a>          
+                </div>
+                
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <footer>
+        <div class="desarrollador">
+            <p> Desarrollado por Alberto Buituron</p>
+        </div>
+    
+        <div class="botonlinks">
+            <a href="https://github.com/albertobuituron/" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <img src="./imagenes/github.png" alt="Github" width="100" height="100">
+                </picture>
+            </a>
+            <a href="https://www.linkedin.com/in/alberto-buituron//" target="_blank" rel="noopener noreferrer">
+                <picture>
+                    <img src="./imagenes/linkedin.png" alt="Linkedin" width="100" height="100"> 
+                </picture>
+        </a>
+    </footer>   
+</body>
+
+
+<script src="./js/script.js"></script>  <!-- Linkea con el archivo que tiene los comandos de JS-->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  <!--Linkea con Swet Alert para las notificaciones-->
+
+</html>
